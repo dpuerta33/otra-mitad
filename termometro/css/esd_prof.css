@@ -1,0 +1,42 @@
+.cuerpo {
+	color: #ffffff;
+	padding-top: 1%;
+}
+
+#speedChart {
+	max-width: 50%;
+	margin-left: 25%;
+	margin-bottom: 2%;
+}
+@media only screen and (min-width: 1300px) {
+	#speedChart {
+		max-width: 40%;
+		margin-left: 30%;
+	}
+}
+@media only screen and (max-width: 992px) {
+	#speedChart {
+		max-width: 100%;
+		margin-left: 0px;
+	}
+}
+/*.table, tr, td{
+	border-collapse: collapse;
+	border: 1px solid #FF3C18;
+}*/
+thead tr td {
+	border: 1px solid #FF3C18 !important;
+}
+tbody tr td {
+	border: 1px solid #FF3C18 !important;
+}
+.td-tittle{
+	text-align: left;
+}
+.td-data{
+	text-align: center;
+}
+.no-border{
+	border-top: 0px !important;
+	border-left: 0px !important;
+}

@@ -1,0 +1,12 @@
+.cuerpo {
+	text-align: center;
+}
+.graficos{
+	height: 800px;
+	margin-top: 5%;
+}
+@media only screen and (max-width: 768px) {
+	.graficos{
+		height: auto;
+	}
+}

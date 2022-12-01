@@ -1,0 +1,140 @@
+.cuerpo {
+	color: #ffffff;
+	padding-top: 1%;
+	height: 700px;
+}
+.leyenda {
+	margin-left: 50%;
+	margin-top: 160px;
+}
+
+.leyenda-img {
+	width: 25px;
+	margin-right: 2%;
+}
+
+.circular-chart {
+  max-width: 40%;
+  max-height: 40%;
+}
+
+.circ1 {
+	position: absolute;
+	left: 80px;
+	top: 492px;
+}
+.circle1 {
+  stroke: #F59F4B;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circ2 {
+	position: absolute;
+	left: 80px;
+	top: 492px;
+}
+.circle2 {
+  stroke: #F59F4B;
+  stroke-opacity: 0.3;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.circ3 {
+	position: absolute;
+	left: 80px;
+	top: 444px;
+}
+.circle3 {
+  stroke: #FF3C18;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circ4 {
+	position: absolute;
+	left: 80px;
+	top: 444px;
+}
+.circle4 {
+  stroke: #FF3C18;
+  stroke-opacity: 0.3;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.circ5 {
+	position: absolute;
+	top: 400px;
+	left: 80px;
+}
+.circle5 {
+  stroke: #991E15;
+  fill: none;
+  stroke-width: 3.6;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circ6 {
+	position: absolute;
+	top: 400px;
+	left: 80px;
+}
+.circle6 {
+  stroke: #991E15;
+  stroke-opacity: 0.3;
+  fill: none;
+  stroke-width: 3.6;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@media only screen and (max-width: 768px) {
+	.leyenda {
+		margin-left: auto;
+		margin-top: 400px;
+	}
+	.circ1 {
+		position: absolute;
+		left: 80px;
+		top: 350px;
+	}
+	.circ2 {
+		position: absolute;
+		left: 80px;
+		top: 350px;
+	}
+	.circ3 {
+		position: absolute;
+		left: 80px;
+		top: 310px;
+	}
+	.circ4 {
+		position: absolute;
+		left: 80px;
+		top: 310px;
+	}
+	.circ5 {
+		position: absolute;
+		top: 262px;
+		left: 80px;
+	}
+	.circ6 {
+		position: absolute;
+		top: 262px;
+		left: 80px;
+	}
+}
+
+@keyframes progress {
+  0%{
+    stroke-dasharray: 0 100;
+  }
+}

@@ -1,0 +1,110 @@
+﻿.cuerpo {
+	color: #ffffff;
+	padding-top: 1%;
+	height: 700px;
+}
+.cebo {
+	color: #271D2C;
+}
+/*========================	Gráfico vertical ========================*/
+.barrasVert {
+  position: absolute;
+  /*width: 100%;*/
+  /*margin: 0 auto;*/
+  /*min-height: 25vw;*/
+  /*max-height: 50vw;*/
+  /*height: 200px;*/
+  max-height: 100%;
+  /*min-width: 40%;*/
+  /*width: 50% !important;*/
+  /*z-index: 1;*/
+  padding: 0px;
+  left: 0px;
+}
+.bar {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  top: 70px;
+  border: 1px solid white;
+  background: #FF384D;
+  /*height: 90%;*/
+  height: 310px;
+  width: 140px;
+  color: #FF384D;
+  padding-top: 50px;
+}
+@media only screen and (max-width: 500px) {
+	.bar {
+		top: 60px;
+	}
+}
+/*
+.bar-img-cont{
+	padding-top: 0px
+}
+*/
+.bar-img{
+	height: 350px;
+	position: relative;
+	left: 360px;
+	bottom: -0px;
+}
+@media only screen and (min-width:767px) {
+	.bar-img{
+		bottom: 15px;
+	}
+}
+@media only screen and (min-width:931px) {
+	.bar-img{
+		bottom: -4px;
+	}
+}
+@media only screen and (max-width:500px) {
+	.bar-img{
+		bottom: -14px;
+	}
+}
+@media only screen and (max-width: 473px) {
+	.bar-img{
+		bottom: 5px;
+	}
+}
+
+.barlabel {
+  position: absolute;
+  /*position: static;*/
+  border-top: 1px solid white;
+  background: #FF983C;
+  bottom: 0;
+  /*width: 100%;*/
+  width: 138px;
+  max-height: 200px;
+  color: #FF983C;
+}
+
+.bar:nth-child(2) {
+  left: 0%;
+}
+
+.bar:nth-child(3) {
+  /*left: 10%;*/
+  left: 450px;
+}
+
+.bar:nth-child(4) {
+  /*left: 16%;*/
+  left: 630px;
+}
+
+.rotulo{
+  align: bottom;
+  font-family: Mohr Regular Latinotype;
+  font-size: large;
+  position: absolute;
+  bottom: -25px;
+  right: 50px;
+}
+.ind-leyenda {
+	top: 400px;
+}

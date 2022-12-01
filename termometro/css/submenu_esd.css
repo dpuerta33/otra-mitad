@@ -1,0 +1,32 @@
+.submenu {
+	margin-left: 10%;
+	margin-bottom: 3%;
+	font-family: Mohr Bold Latinotype;
+}
+@media only screen and (max-width: 768px) {
+	.submenu {
+		margin-left: 1.5%;
+	}
+}
+.submenu li {
+	display: inline;
+	margin-right: 5%;
+	opacity: 0.2;
+	font-size: 1.2em;
+}
+.submenu li:hover {
+	opacity:1;
+}
+a, a:link, a:active, a:visited{
+	text-decoration: none;
+	color: #000000;
+}
+.activo-sub {
+	opacity: 1 !important;
+}
+
+.menu-ico {
+	width: 12px;
+	margin-bottom: 0.5%;
+	margin-right: 5px;
+}

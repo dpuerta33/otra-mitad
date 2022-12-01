@@ -1,0 +1,258 @@
+﻿.cuerpo {
+	color: #ffffff;
+	padding-top: 1%;
+	height: 700px;
+}
+/*========================	Gráfico vertical ========================*/
+.barrasVert {
+  position: absolute;
+  /*width: 100%;*/
+  /*margin: 0 auto;*/
+  /*min-height: 25vw;*/
+  /*max-height: 50vw;*/
+  /*height: 200px;*/
+  max-height: 100%;
+  /*min-width: 40%;*/
+  /*width: 50% !important;*/
+  /*z-index: 1;*/
+  padding: 0px;
+  left: 0px;
+}
+.bar {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  top: 50px;
+  border: 1px solid white;
+  background: #FF384D;
+  max-width: 23.51px;
+  max-height: 200px;
+  /*height: 90%;*/
+  height: 200px;
+  color: #FF384D;
+  padding-top: 50px;
+}
+@media only screen and (max-width: 500px) {
+	.bar {
+		top: 60px;
+	}
+}
+/*
+.bar-img-cont{
+	padding-top: 0px
+}
+*/
+.bar-img{
+	height: 214px;
+	position: relative;
+	left: -20px;
+	bottom: -4px;
+}
+@media only screen and (min-width:767px) {
+	.bar-img{
+		bottom: 15px;
+	}
+}
+@media only screen and (min-width:931px) {
+	.bar-img{
+		bottom: -4px;
+	}
+}
+@media only screen and (max-width:500px) {
+	.bar-img{
+		bottom: -14px;
+	}
+}
+@media only screen and (max-width: 473px) {
+	.bar-img{
+		bottom: 5px;
+	}
+}
+
+.barlabel {
+  position: absolute;
+  /*position: static;*/
+  border-top: 1px solid white;
+  background: #FF983C;
+  bottom: 0;
+  /*width: 100%;*/
+  width: 21px;
+  max-height: 200px;
+  color: #FF983C;
+}
+
+.bar:nth-child(2) {
+  left: 0%;
+}
+
+.bar:nth-child(3) {
+  /*left: 10%;*/
+  left: 30px;
+}
+
+.bar:nth-child(4) {
+  /*left: 16%;*/
+  left: 60px;
+}
+
+.bar:nth-child(5) {
+  /*left: 22%;*/
+  left: 90px;
+}
+
+.bar:nth-child(6) {
+  /*left: 28%;*/
+  left: 120px;
+}
+
+.bar:nth-child(7) {
+  /*left: 34%;*/
+  left: 150px;
+}
+.bar:nth-child(8) {
+  /*left: 40%;*/
+  left: 180px;
+}
+
+.bar:nth-child(9) {
+  /*left: 46%;*/
+  left: 210px;
+}
+
+.bar:nth-child(10) {
+  /*left: 52%;*/
+  left: 240px;
+}
+.bar:nth-child(11) {
+  /*left: 58%;*/
+  left: 270px;
+}
+.bar:nth-child(12) {
+  /*left: 64%;*/
+  left: 300px;
+}
+.bar:nth-child(13) {
+  /*left: 70%;*/
+  left: 330px;
+}
+.vertical{
+  writing-mode: vertical-rl;
+  /*transform: rotate(-180deg);*/
+  align: bottom;
+  font-family: Mohr Regular Latinotype;
+  font-size: small;
+  position: absolute;
+  bottom: -160px;
+  right: 0px;
+  top: 210px;
+}
+/*========================	Gráfico horizontal ========================*/
+/*
+.bar-chart > .legend {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    transform: rotate(-90deg);
+}
+.bar-chart {
+    position: absolute;
+    /*width: 100%;/
+    /*margin-top: 15px;
+    padding-bottom: 1px;/
+	right: 0px;
+	
+	border: 1px solid red;
+}
+.item {
+	width: 100px;
+}
+.bar-chart > .chart {
+    position: relative;
+    width: 100%;
+    height:100%; 
+}
+.bar-chart > .chart > .item {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.bar-chart > .chart > .item > .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    background-color: #FF983C;
+    z-index: 5;
+}
+
+.bar-chart > .chart > .item > .bar > .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid white;
+    height: 100%;
+    background-color: #FF384D;
+    z-index: 10;
+}
+.bar-chart > .chart > .item > .bar > .progress > .title {
+    display: block;
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 12px;
+    letter-spacing: 2px;
+    z-index: 15;
+}
+.vertical{
+	trasform: rotate(-90deg);
+}
+*/
+.barrasHor {
+	
+}
+@media only screen and (max-width: 991px) {
+	.cuerpo {
+		height: 900px;
+	}
+	.barrasHor {
+		position: relative;
+		left: -32px;
+		margin-top: 450px;
+	}
+}
+.barrasHor h4 {
+	margin-bottom: 20px;
+}
+.barra {
+	height: 23.51px;
+	width: 250px;
+	background-color: #FF983C;
+	margin-bottom: 10px;
+	border: 1px solid #ffffff;
+}
+.subBarra {
+	height: 100%;
+	background-color: #FF384D;
+	border-right: 1px solid #ffffff;
+}
+.detalleGraf {
+	margin-left: 5px;
+}
+.eje-hor {
+	height: 55px;
+	width: 260px;
+	position: relative;
+	left: -5px;
+	
+}
+.img-graf {
+	width: 200px;
+}
+.hor-group {
+	margin-top: 2%;
+}
