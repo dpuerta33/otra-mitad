@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head lang="es">
+    <title>La otra mitad</title>
+    <!-- Icono de la página -->
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <!-- Etiquetas meta -->
+		<meta name="author" content="Diego Puerta Cazorla, Antonio Roncero Ábalos">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	   <meta name="keywords" content="la otra mitad">
+    <!--<meta name="description" content="">-->
+    <!-- Codificación -->
+		<meta charset="utf-8">
+    <!-- Hojas de estilo -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Hoja de estilo general -->
+    <!-- Hoja de estilo local-->
+    <link rel="stylesheet" type="text/css" href="css/style_dnd.css">
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <div class="page-header">
+
+      <!-- Título -->
+      <div class="titulo">
+        <a href="index.html"><img src="img/titulo.png" /></a>
+      </div>
+
+      <!-- Termómetro -->
+      <div class="termometro">
+        <a href="termometro/index.html"><img src="img/termomometro_boton.png" /></a>
+      </div>
+
+      <!-- Menú -->
+      <nav class="navbar navbar-default">
+			  <!-- El logotipo y el icono que despliega el menú se agrupan
+				   para mostrarlos mejor en los dispositivos móviles -->
+			  <div class="navbar-header">
+          <!-- Esta imagen solo se muestra en pantallas pequeñas -->
+          <div class="titulo_small col-xs-9">
+            <a href="index.html"><img src="img/titulo.png" /></a>
+          </div>
+          
+				  <button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-ex1-collapse">
+  				  <span class="sr-only">Desplegar navegación</span>
+  				  <span class="icon-bar"></span>
+  				  <span class="icon-bar"></span>
+  				  <span class="icon-bar"></span>
+  				</button>
+			  </div>
+
+			  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+				   otro elemento que se pueda ocultar al minimizar la barra -->
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+  				<ul class="nav navbar-nav bold">
+            <li><a href="index.html">proyecto</a></li>
+  				  <li><a href="buscador.php">buscador</a></li>
+  				  <li><a href="timeline.html">timeline</a></li>
+            <li><a href="subir.html">subir</a></li>
+            <li class="activo"><a href="quienes_son.html">descubre</a></li>
+            <li><a href="libros.html">libros</a></li>
+            <li class="term-item"><a href="termometro/index.html">Termómetro</a></li>
+  				</ul>
+			  </div>
+			</nav>
+
+    </div>
+
+    <!-- Cuerpo -->
+    <div class="cuerpo">
+
+      <!-- Contenedor biografía -->
+      <div class="cont-bio col-sm-12 col-md-4">
+
+        <div class="col-xs-12 cont">
+          <!-- Conenedor diseñadora -->
+          <div id="cont-target-cara" class="cont-target" ondrop="drop(event)" ondragOver="allowDrop(event)"><img src="img/cara.png" id="cara"/></div>
+			
+          <!-- Contenedor obra-->
+          <div id="cont-target-obra" class="cont-target" ondrop="drop(event)" ondragOver="allowDrop(event)"><img src="img/obra.png" id="obra"/></div>
+        </div>
+		
+		
+
+        <!-- Descripción -->
+        <div id="descripcion" class="descripcion">
+          <h3 class="bold" id="titDesc">¿Quiénes son?</h3>
+          <p id="parrafo" class="parrafo">Relaciona las caras de las diseñadoras con su trabajo y arrástralas hasta aquí.</p>
+        </div>
+
+        <!-- Biografía -->
+        <div class="biografia">
+
+        </div>
+		
+		<button class="recargar btn parrafo" onclick="javascript:window.location.reload();">Volver a empezar</button>
+		
+      </div>
+
+      <!-- Contenedor imágenes-->
+      <div id="cont-img" class="cont-img col-sm-12 col-md-8">
+        <div class="contArrastrable"><img src="img/patricia-urquiola.jpg" id="patricia" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/zuzana_Licko.jpg" id="zuzana" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/zuzana_licko_tipografia.png" class="arrastrable" id="zuzana_obra" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/hella_jongerius.jpg" id="hella" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/dorothee_becker_objeto.jpg" id="dorothee_obra" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/deborah_sussman_juegos_olimpicos.jpg" id="deborah_obra" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/deborah_sussman.png" id="deborah" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/hella_jongerius_jarrones.jpg" id="hella_obra" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/dorothee_becker.jpg" id="dorothee" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/india_mahdavi.jpg" id="india" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/vivienne-westwood.jpg" id="vivienne" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/sibylla_coleccion.jpg" id="sibylla_obra" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/vivienne_westwood_colección.jpg" id="vivienne_obra" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/patricia_urquiola_objeto.jpg" id="patricia_obra" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/india_madhavi_interior.jpg" id="india_obra" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+        <div class="contArrastrable"><img src="img/sibylla.jpg" id="sibylla" class="arrastrable" draggable="true" ondragstart="drag(event)"/></div>
+      </div>
+
+    </div>
+
+    <!-- Pié -->
+    <div class="footer light">
+      Proyecto TFE | Julieta G. Obligado | realizado con tipografía Mohr
+    </div>
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/funciones_dnd.js"></script>
+  </body>
+</html>

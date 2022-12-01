@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head lang="es">
+    <title>La otra mitad</title>
+    <!-- Icono de la página -->
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <!-- Etiquetas meta -->
+		<meta name="author" content="Diego Puerta Cazorla, Antonio Roncero Ábalos">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	   <meta name="keywords" content="la otra mitad">
+    <!--<meta name="description" content="">-->
+    <!-- Codificación -->
+		<meta charset="utf-8">
+    <!-- Hojas de estilo -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Hoja de estilo general -->
+    <!-- Hoja de estilo local-->
+    <link rel="stylesheet" type="text/css" href="css/form_style.css">
+    <!-- Scripts -->
+    <script src="js/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <div class="page-header">
+
+      <!-- Título -->
+      <div class="titulo">
+        <a href="index.html"><img src="img/titulo.png" /></a>
+      </div>
+
+      <!-- Termómetro -->
+      <div class="termometro">
+        <a href="termometro/index.html"><img src="img/termomometro_boton.png" /></a>
+      </div>
+
+      <!-- Menú -->
+      <nav class="navbar navbar-default">
+			  <!-- El logotipo y el icono que despliega el menú se agrupan
+				   para mostrarlos mejor en los dispositivos móviles -->
+			  <div class="navbar-header">
+          <!-- Esta imagen solo se muestra en pantallas pequeñas -->
+          <div class="titulo_small col-xs-9">
+            <a href="index.html"><img src="img/titulo.png" /></a>
+          </div>
+
+				  <button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-ex1-collapse">
+  				  <span class="sr-only">Desplegar navegación</span>
+  				  <span class="icon-bar"></span>
+  				  <span class="icon-bar"></span>
+  				  <span class="icon-bar"></span>
+  				</button>
+			  </div>
+
+			  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+				   otro elemento que se pueda ocultar al minimizar la barra -->
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+  				<ul class="nav navbar-nav bold">
+            <li><a href="index.html">proyecto</a></li>
+  				  <li><a href="buscador.php">buscador</a></li>
+  				  <li><a href="timeline.html">timeline</a></li>
+            <li class="activo"><a href="subir.html">subir</a></li>
+            <li><a href="quienes_son.html">descubre</a></li>
+			<li><a href="libros.html">libros</a></li>
+            <li class="term-item"><a href="termometro/index.html">Termómetro</a></li>
+  				</ul>
+			  </div>
+			</nav>
+
+    </div>
+
+    <!-- Cuerpo -->
+    <div class="cuerpo">
+
+      <!-- Foormulario -->
+
+        <!-- Contenedor del formulario -->
+  			<div class="form">
+
+          <!-- Formulario -->
+  				<form class="register-form" id="formDiseniadora" method="post" action="anadirDisenadoras.php">
+
+            <!-- Panel de errores -->
+  					<div id="errorPanel" class=""></div>
+
+            <!-- Párrafo inicial -->
+
+            <div id="parrafo-inicial"class="parraf-ini col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+              <h3 class="bold">Subir diseñadoras a la web</h3>
+              <p class="parrafo">
+              Si estás interesado en colaborar con este proyecto subiendo la información de una diseñadora
+              esta es la ficha que debes rellenar. A continuación este material será subido a la web para que
+              todo el mundo pueda conocer a esta autora y utilizarla como referencia. El objetivo de este
+              formulario es recoger datos para iniciar una red colaborativa que sirva para buscar y compartir
+              referentes femeninos en el campo del diseño. Para esto te pedimos que elijas una diseñadora y
+              rellenes las preguntas que te haremos a continuación. No te cortes en ir a buscar a internet o a
+              donde sea los datos que desconozcas. La motivación principal es recopilar datos para que otros
+              usuarios puedan leer sobre diseñadoras que antes no conocían. Si quieres introducir más de una
+              diseñadora, solo tienes que rellenar el formulario para cada una de ellas.
+              </p>
+
+              <input type="button" class="btn-ini btn btn-primary col-xs-6 col-sm-5 col-md-5 semibold" id="start" value="Empezar"/>
+            </div>
+
+            <!-- Sección 1 -->
+  					<fieldset id="step1" class="step col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+              <span class="count-steps col-xs-12 col-sm-12 parrafo">Sección 1</span>
+              <hr />
+
+              <h3 class="bold">Datos bibliográficos de la diseñadora</h3>
+
+              <label class="col-sm-12 semibold">Nombre*</label>
+              <div class="col-sm-12 parrafo"><input type="text" id="nombre" name="nombre" class="form-control campo" placeholder="Nombre" required/></div>
+
+              <label class="col-sm-12 semibold">Fecha de nacimiento*</label>
+              <div class="col-sm-12 parrafo"><input type="date" id="anioNacimiento" max="2018-09-01" name="anioNacimiento" class="form-control campo" placeholder="Año de nacimiento" required/></div>
+
+              <label class="col-sm-12 semibold">Fecha de fallecimiento (si procede)</label>
+              <div class="col-sm-12 parrafo"><input type="date" id="anioFallecimiento" name="anioFallecimiento" class="form-control campo" placeholder="Año de fallecimiento"/></div>
+
+              <label class="col-sm-12 semibold">País de nacimiento*</label>
+              <div class="col-sm-12 parrafo"><input type="text" id="paisNacimiento" name="paisNacimiento" class="form-control campo" placeholder="País de nacimiento" required/></div>
+
+              <label class="col-sm-12 semibold">País de residencia*</label>
+              <div class="col-sm-12 parrafo"><input type="text" id="paisResidencia" name="paisResidencia" class="form-control campo" placeholder="País de residencia" required/></div>
+
+              <input type="button" class="form-btn btn btn-primary col-xs-6 col-xs-offset-6 semibold" id="next1" value="Siguiente"/>
+
+  					</fieldset>
+
+            <!-- Sección 2 -->
+  					<fieldset id="step2" class="step col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+              <span class="count-steps col-xs-12 col-sm-12 parrafo">Sección 2</span>
+              <hr />
+
+              <h3 class="bold">Bibliografía de la diseñadora</h3>
+
+              <!--<div class="col-sm-12"><input type="text" id="biografia" name="biografia" class="form-control campo parrafo" placeholder="Escribe una breve biografia (máximo 1000 caracteres)" required/></div>-->
+              <div class="col-sm-12"><textarea id="biografia" name="biografia" class="form-control campo parrafo" maxlength=1000 placeholder="Escribe una breve biografia (máximo 1000 caracteres)" required></textarea></div>
+
+              <label class="col-sm-12 semibold">Fotos de la diseñadora*</label>
+              <p class="col-xs-12 parrafo">Incluye alguna foto de ella y de sus obras, copiando y pegando su link a continuación.
+El link debe hacer referencia al recurso, no a la página que lo contiene. Se consigue al inspeccionar sobre la foto, copiando el link al que hace referencia. Tendrá una forma parecida a ésta: "//c1.staticflickr.com/1/914/42350277715_048fbce61e_z.jpg"
+El tamaño recomendado para las fotos es 1280 x 1280.</p>
+              <div class="col-sm-12"><input type="text" id="foto" name="foto" class="form-control campo parrafo" placeholder="URL de la imagen" required/></div>
+
+              <input type="button" class="form-btn btn btn-primary col-xs-5 semibold" id="back1" value="Anterior"/>
+  						<input type="button" class="form-btn btn btn-primary col-xs-5 col-xs-offset-2 semibold" id="next2" value="Siguiente"/>
+
+  					</fieldset>
+
+            <!-- Sección 3 -->
+  					<fieldset id="step3" class="step col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+              <span class="count-steps col-xs-12 col-sm-12 parrafo">Sección 3</span>
+              <hr />
+
+              <h3 class="bold">Formación de la diseñadora</h3>
+
+              <label class="col-sm-12 semibold">Formación académica</label>
+              <div class="col-sm-12 parrafo"><input type="text" id="formacion" name="formacion" class="form-control campo" placeholder="Formación académica"/></div>
+
+              <label class="col-sm-12 semibold">Publicaciones</label>
+              <p class="col-xs-12 parrafo">Indica las referencias de artículos o libros que haya publicado, si es el caso.</p>
+              <div class="col-sm-12 parrafo"><input type="text" id="publicaciones" name="publicaciones" class="form-control campo" placeholder="Publicaciones"/></div>
+
+              <label class="col-sm-12 semibold">¿Ha ganado algún premio?</label>
+              <p class="col-xs-12 parrafo">Si es así, indica cuáles.</p>
+              <div class="col-sm-12 parrafo"><input type="text" id="premios" name="premios" class="form-control campo" placeholder="Premios"/></div>
+
+              <input type="button" class="form-btn btn btn-primary col-xs-5 semibold" id="back2" value="Anterior"/>
+  						<input type="button" class="form-btn btn btn-primary col-xs-5 col-xs-offset-2 semibold" id="next3" value="Siguiente"/>
+
+            </fieldset>
+
+            <!-- Sección 4 -->
+  					<fieldset id="step4" class="step col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+              <span class="count-steps col-xs-12 col-sm-12 parrafo">Sección 4</span>
+              <hr />
+
+              <h3 class="bold">Especialidad</h3>
+
+              <!--<div class="col-sm-12"><input type="text" id="descripcion" class="form-control parrafo" placeholder="Descripción (opcional)"/></div>-->
+
+              <label class="col-sm-12 semibold">¿En qué especialidad incluirías su trabajo?</label>
+              <p class="col-xs-12 parrafo">Puedes incuirla en varias, si lo crees necesario.</p>
+              <div class="col-sm-12 checkbox parrafo">
+  						  <label><input type="checkbox" id="grafico" name="especialidad[]" value="Disenio grafico" class="control"/> Diseño gráfico</label><br />
+  						  <label><input type="checkbox" id="interior" name="especialidad[]" value="Disenio de interiores" class="control"/> Diseño de interiores</label><br />
+                <label><input type="checkbox" id="producto"name="especialidad[]" value="Disenio de producto" class="control"/> Diseño de producto</label><br />
+  						  <label><input type="checkbox" id="moda" name="especialidad[]" value="Disenio de moda" class="control"/> Diseño de moda</label><br />
+  						</div>
+
+              <input type="button" class="form-btn btn btn-primary col-xs-5 semibold" id="back3" value="Anterior"/>
+  						<input type="button" class="form-btn btn btn-primary col-xs-5 col-xs-offset-2 semibold" id="next4" value="Siguiente"/>
+
+  					</fieldset>
+
+            <!-- Sección 5 -->
+  					<fieldset id="step5" class="step col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+              <span class="count-steps col-xs-12 col-sm-12 parrafo">Sección 5</span>
+              <hr />
+
+              <h3 class="bold">Diseño gráfico</h3>
+
+              <p class="col-xs-12 parrafo">Solo podrás contestar a esta pregunta si elegiste Diseño gráfico.</p>
+
+              <label class="col-sm-12 semibold">¿En cuáles de estas categorías incluirías el trabajo de esta diseñadora dentro del marco del diseño gráfico?</label>
+              <div id="sub_grafico" class="col-sm-12 checkbox parrafo">
+  						  <label><input type="checkbox" id="ilustracion" name="grafico[]" subespecialidad="grafico" value="Ilustracion" disabled/> Ilustración</label><br />
+  						  <label><input type="checkbox" id="interactivo" name="grafico[]" subespecialidad="grafico" value="Interactivo" disabled/> Interactivo</label><br />
+                <label><input type="checkbox" id="motion_graphics" name="grafico[]" subespecialidad="grafico" value="Motion graphics" disabled/> Motion graphics</label><br />
+  						  <label><input type="checkbox" id="tipografia" name="grafico[]" subespecialidad="grafico" value="Tipografia" disabled/> Tipografía</label><br />
+                <label><input type="checkbox" id="branding" name="grafico[]" subespecialidad="grafico" value="Branding" disabled/> Branding</label><br />
+  						  <label><input type="checkbox" id="editorial" name="grafico[]" subespecialidad="grafico" value="Editorial" disabled/> Editorial</label><br />
+  						  <label><input type="checkbox" id="publicidad" name="grafico[]" subespecialidad="grafico" value="Publicidad" disabled/> Publicidad</label><br />
+                <label><input type="checkbox" id="grafico_otra" name="grafico[]" subespecialidad="grafico" value="Otras" disabled/> Otras</label><br />
+  						</div>
+
+              <h3 class="bold">Diseño de interiores</h3>
+
+              <p class="col-xs-12 parrafo">Solo podrás contestar a esta pregunta si elegiste Diseño de interiores.</p>
+
+              <label class="col-sm-12 semibold">¿En cuáles de estas categorías incluirías el trabajo de esta diseñadora dentro del marco del diseño de interiores?</label>
+              <div id="sub_interior" class="col-sm-12 checkbox parrafo">
+  						  <label><input type="checkbox" id="decoracion" name="interiores[]" subespecialidad="interiores" value="Decoracion" disabled/> Decoración</label><br />
+  						  <label><input type="checkbox" id="retail" name="interiores[]" subespecialidad="interiores" value="Retail" disabled/> Retail</label><br />
+                <label><input type="checkbox" id="efimero" name="interiores[]" subespecialidad="interiores" value="Efimero" disabled/> Efímero</label><br />
+				<label><input type="checkbox" id="escenografia" name="interiores[]" subespecialidad="interiores" value="Escenografia" disabled/> Escenografía</label><br />
+  						  <label><input type="checkbox" id="rehabilitacion" name="interiores[]" subespecialidad="interiores" value="Rehabilitacion" disabled/> Rehabilitación</label><br />
+                <label><input type="checkbox" id="expositivo" name="interiores[]" subespecialidad="interiores" value="Expositivo" disabled/> Expositivo</label><br />
+                <label><input type="checkbox" id="interior_otra" name="interiores[]" subespecialidad="interiores" value="Otras" disabled/> Otras</label><br />
+  						</div>
+
+              <h3 class="bold">Diseño de producto</h3>
+
+              <p class="col-xs-12 parrafo">Solo podrás contestar a esta pregunta si elegiste Diseño de producto.</p>
+
+              <label class="col-sm-12 semibold">¿En cuáles de estas categorías incluirías el trabajo de esta diseñadora dentro del marco del diseño de producto?</label>
+              <div id="sub_producto" class="col-sm-12 checkbox parrafo">
+  						  <label><input type="checkbox" id="mobiliario" name="producto[]" subespecialidad="producto" value="Mobiliario" disabled/> Mobiliario</label><br />
+  						  <label><input type="checkbox" id="packaging" name="producto[]" subespecialidad="producto" value="Packaging" disabled/> Packaging</label><br />
+                <label><input type="checkbox" id="productos" name="producto[]" subespecialidad="producto" value="Productos" disabled/> Productos</label><br />
+  						  <label><input type="checkbox" id="iluminacion" name="producto[]" subespecialidad="producto" value="Iluminacion" disabled/> Iluminación</label><br />
+                <label><input type="checkbox" id="tecnologicos" name="producto[]" subespecialidad="producto" value="Tecnologicos" disabled/> Tecnológicos</label><br />
+  						  <label><input type="checkbox" id="domestico" name="producto[]" subespecialidad="producto" value="Domestico" disabled/> Doméstico</label><br />
+                <label><input type="checkbox" id="producto_otra" name="producto[]" subespecialidad="producto" value="Otras" disabled/> Otras</label><br />
+  						</div>
+
+              <h3 class="bold">Diseño de moda</h3>
+
+              <p class="col-xs-12 parrafo">Solo podrás contestar a esta pregunta si elegiste Diseño de moda.</p>
+
+              <label class="col-sm-12 semibold">¿En cuáles de estas categorías incluirías el trabajo de esta diseñadora dentro del marco del diseño de moda?</label>
+              <div id="sub_moda" class="col-sm-12 checkbox parrafo">
+  						  <label><input type="checkbox" id="alta_costura" name="moda[]" subespecialidad="moda" value="Alta costura" disabled/> Alta costura</label><br />
+  						  <label><input type="checkbox" id="pretaporter" name="moda[]" subespecialidad="moda" value="Pret a porter" disabled/> Pret a porter</label><br />
+                <label><input type="checkbox" id="textil" name="moda[]" subespecialidad="moda" value="Textil" disabled/> Textil</label><br />
+  						  <label><input type="checkbox" id="patronage" name="moda[]" subespecialidad="moda" value="Patronaje" disabled/> Patronaje</label><br />
+                <label><input type="checkbox" id="moda_tecnica" name="moda[]" subespecialidad="moda" value="Moda tecnica" disabled/> Moda técnica</label><br />
+				<label><input type="checkbox" id="complementos" name="moda[]" subespecialidad="moda" value="Complementos" disabled/> Complementos</label><br />
+  						  <label><input type="checkbox" id="moda_otra" name="moda[]" subespecialidad="moda" value="Otras" disabled/> Otras</label><br />
+  						</div>
+
+              <input type="button" class="form-btn btn btn-primary col-xs-5 semibold" id="back4" value="Anterior"/>
+  						<input type="button" class="form-btn btn btn-primary col-xs-5 col-xs-offset-2 semibold" id="next5" value="Siguiente"/>
+
+  					</fieldset>
+
+            <!-- Sección 6 -->
+  					<fieldset id="step6" class="step col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+              <span class="count-steps col-xs-12 col-sm-12 parrafo">Sección 6</span>
+              <hr />
+
+              <h3 class="bold">Página web de la diseñadora</h3>
+
+              <!-- <div class="col-sm-12"><input type="text" id="descripcion" class="form-control campo" placeholder="Descripción (opcional)"/></div> -->
+
+              <label class="col-xs-12 semibold">¿Tiene página web?</label>
+              <div class="col-sm-12 radio parrafo">
+  						  <label><input type="radio" name="radio" id="websi" value="radio1" required/> Si</label>
+  						  <label><input type="radio" name="radio" id="webno" value="radio2" required checked/> No</label>
+  						</div>
+
+              <label class="col-sm-12 semibold">¿Cuál es su página web?</label>
+              <div class="col-sm-12 parrafo"><input type="text" id="web" name="web" class="form-control  campo" placeholder="Página web" disabled/></div>
+
+              <input type="button" class="form-btn btn btn-primary col-xs-5 semibold" id="back5" value="Anterior"/>
+  						<input type="button" class="form-btn btn btn-primary col-xs-5 col-xs-offset-2 semibold" id="next6" value="Siguiente"/>
+
+  					</fieldset>
+
+            <!-- Sección 7 -->
+  					<fieldset id="step7" class="step col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+              <span class="count-steps col-xs-12 col-sm-12 parrafo">Sección 7</span>
+
+              <hr />
+
+              <label class="col-sm-12 semibold">Dirección de correo electrónico *</label>
+  						<div class="col-sm-12"><input type="email" id="email" name="email" class="form-control campo parrafo" placeholder="Correo electrónico" required/></div>
+
+              <input type="button" class="form-btn btn btn-primary col-xs-5 semibold" id="back6" value="Anterior"/>
+  						<input type="button" class="form-btn btn btn-primary col-xs-5 col-xs-offset-2 semibold" id="next7" value="Siguiente"/>
+
+  					</fieldset>
+
+            <!-- Sección 8 -->
+  					<fieldset id="step8" class="step col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+              <span class="count-steps col-xs-12 col-sm-12 parrafo">Sección 8</span>
+              <hr />
+
+              <h3 class="bold">Muchas gracias</h3>
+
+              <p class="parrafo">¡Muchas gracias por tu participación!</p>
+
+              <input type="button" class="form-btn btn btn-primary col-xs-5 semibold" id="back7" value="Anterior"/>
+              <input type="submit" class="form-btn btn btn-primary col-xs-5 col-xs-offset-2 semibold" id="submit" value="Enviar"/>
+
+  					</fieldset>
+  				</form>
+  			</div>
+
+    </div>
+
+    <!-- Pié -->
+    <div class="footer light">
+      Proyecto TFE | Julieta G. Obligado | realizado con tipografía Mohr
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
