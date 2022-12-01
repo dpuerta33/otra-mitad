@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head lang="es">
+    <title>Termómetro</title>
+    <!-- Icono de la página -->
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <!-- Etiquetas meta -->
+	<meta name="author" content="Diego Puerta Cazorla, Antonio Roncero Ábalos">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="termometro">
+    <!--<meta name="description" content="">-->
+    <!-- Codificación -->
+		<meta charset="utf-8">
+    <!-- Hojas de estilo -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!-- Script y CSS para los gráficos -->
+	<script type="text/javascript" src="graf/vis.js"></script>
+	<link href="graf/vis-network.min.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+		#mynetwork {
+		  width: 100%;
+		  height: 100vh;
+		  background-color:#271d2c; 
+		}
+		.cuerpo{
+			padding: 0px;
+		}
+	</style>
+  
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <div class="page-header">
+	
+      <!-- Título -->
+      <div class="titulo">
+        <a href="index.html"><img src="img/titulo.png" /></a>
+      </div>
+
+      <!-- La otra mitad -->
+      <div class="laom">
+        <a href="../index.html"><img src="img/otra_mitad_boton.png" /></a>
+      </div>
+
+      <!-- Menú -->
+      <nav class="navbar navbar-default bold">
+			  <!-- El logotipo y el icono que despliega el menú se agrupan
+				   para mostrarlos mejor en los dispositivos móviles -->
+			  <div class="navbar-header">
+          <!-- Esta imagen solo se muestra en pantallas pequeñas -->
+          <div class="titulo_small col-xs-9">
+            <a href="index.html"><img src="img/titulo.png" /></a>
+          </div>
+
+				  <button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-ex1-collapse">
+  				  <span class="sr-only">Desplegar navegación</span>
+  				  <span class="icon-bar"></span>
+  				  <span class="icon-bar"></span>
+  				  <span class="icon-bar"></span>
+  				</button>
+			  </div>
+
+			  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+				   otro elemento que se pueda ocultar al minimizar la barra -->
+			  <div class="collapse navbar-collapse navbar-ex1-collapse">
+  				<ul class="nav navbar-nav">
+				  <li class="activo"><a href="index.html">inicio</a></li>
+  				  <li><a href="universidades.html">universidades</a></li>
+  				  <li><a href="mundo_lab.html">mundo laboral</a></li>
+  				  <li><a href="reconocimiento.html">reconocimiento</a></li>
+            <li><a href="asociaciones.html">asociaciones</a></li>
+            <li><a href="esd.html">caso ESD</a></li>
+            <li class="term-item"><a href="../index.html">La otra mitad</a></li>
+  				</ul>
+			  </div>
+			</nav>
+
+    </div>
+
+    <!-- Cuerpo -->
+    <div class="cuerpo">
+		<div><p  class="parrafo" style="color: #fff; text-align: center">Mapa del termómetro｜Pincha y arrastra</p></div>
+		<div id="mynetwork"></div>
+		<script type="text/javascript">
+		  // create an array with nodes
+		  var nodes = new vis.DataSet([
+			{id: 1, group:'rojo', label: 'ESTUDIANTES'},
+			{id: 2, group:'naranja', label: 'Escuelas\nde diseño'},
+			{id: 3, group:'naranja', label: 'Universidades'},
+			{id: 4, group:'rojo', label: 'Mundo laboral'},
+			{id: 5, group:'naranja', label: 'Dirección'},
+			{id: 6, group:'naranja', label: 'Profesionales'},
+			{id: 7, group:'naranja', label: 'Graduados'},
+			{id: 8, group:'rojo', label: 'Reconocimiento'},
+			{id: 9, group:'naranja', label: 'wallpaper'},
+			{id: 10, group:'naranja', label: 'vitra'},
+			{id: 11, group:'naranja', label: 'Premio\nnacional\ndiseño'},
+			{id: 12, group:'naranja', label: 'Premio\nnacional\nmoda'},
+			{id: 13, group:'rojo', label: 'ESD\ncaso de estudio'},
+			{id: 14, group:'naranja', label: 'conferencias'},
+			{id: 15, group:'naranja', label: 'Matriculados'},
+			{id: 16, group:'naranja', label: 'Profesores'},
+			{id: 17, group:'naranja', label: 'graduados'},
+			{id: 18, group:'amarillo', label: 'Gráfico'},
+			{id: 19, group:'amarillo', label: 'Producto'},
+			{id: 20, group:'amarillo', label: 'Moda'},
+			{id: 21, group:'amarillo', label: 'Interiores'},
+			{id: 22, group:'amarillo', label: 'Gráfico'},
+			{id: 23, group:'amarillo', label: 'Producto'},
+			{id: 24, group:'amarillo', label: 'Moda'},
+			{id: 25, group:'amarillo', label: 'Interiores'},
+			{id: 26, group:'amarillo', label: 'Prfesores'},
+			{id: 27, group:'amarillo', label: 'Responsables'},
+			{id: 28, group:'amarillo', label: 'Máster'},
+			{id: 29, group:'amarillo', label: 'Dirección'}
+		  ]);
+
+		  // create an array with edges
+		  var edges = new vis.DataSet([
+			{from: 1, to: 2, color:'#ffffff'},
+			{from: 1, to: 3},
+			{from: 4, to: 5},
+			{from: 4, to: 6},
+			{from: 4, to: 7},
+			{from: 8, to: 9},
+			{from: 8, to: 10},
+			{from: 8, to: 11},
+			{from: 8, to: 12},
+			{from: 13, to: 14},
+			{from: 13, to: 15},
+			{from: 13, to: 16},
+			{from: 13, to: 17},
+			{from: 15, to: 18},
+			{from: 15, to: 19},
+			{from: 15, to: 20},
+			{from: 15, to: 21},
+			{from: 17, to: 22},
+			{from: 17, to: 23},
+			{from: 17, to: 24},
+			{from: 17, to: 25},
+			{from: 16, to: 26},
+			{from: 16, to: 27},
+			{from: 16, to: 28},
+			{from: 16, to: 29}
+		  ]);
+		   // create a network
+			 var container = document.getElementById('mynetwork');
+			var data = {
+				nodes: nodes,
+				edges: edges
+			};
+			var options = {
+				groups: {
+					naranja: {borderWidth: '10', color:{background: '#ff3c18', border: '#ff3c18', highlight:'#ee3952'}},
+					rojo: {borderWidth: '10', color: {background: '#94130b', border: '#94130b', highlight:'#ee3960'}},
+					amarillo: {borderWidth: '10', color: {background: '#ff983c', border: '#ff983c', highlight:'#ee3960'}}
+				},
+				nodes: {
+					shape: 'circle',
+					size: 30,
+					font: {
+						fontFamily: '"Mohr Regular Latinotype", sans-serif',
+						size: 12,
+						color: '#fff'
+					}
+				},
+				edges: {
+					//arrows: 'to, from',
+					color: '#ffffff'
+				}
+			};
+			network = new vis.Network(container, data, options);
+
+			
+
+
+		/*  var container = document.getElementById('mynetwork');
+		  var data = {
+			nodes: nodes,
+			edges: edges
+		  };
+		  var options = {};
+		  var network = new vis.Network(container, data, options);*/
+		</script>
+    </div>
+
+    <!-- Pié -->
+    <div class="footer">
+      Proyecto TFE | Julieta G. Obligado | realizado con tipografía Mohr
+    </div>
+	
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
