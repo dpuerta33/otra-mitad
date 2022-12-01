@@ -1,0 +1,102 @@
+.cuerpo {
+	color: #ffffff;
+	padding-top: 1%;
+}
+.titcont {
+	padding: 0px;
+}
+.titdesc {
+	float: left;
+}
+.interruptor {
+	width: 155px;
+	height: 55px;
+	background-color: #787498;
+	margin-bottom: 2%;
+	float: right;
+	border-radius: 50px;
+	margin-top: 2%;
+	padding: 4px;
+}
+#int-rojo {
+	float: left;
+}
+#int-amarillo {
+	float: right;
+}
+.int-rojo {
+	float: left;
+}
+.int-amarillo {
+	float: right;
+}
+.int-hombre {
+	position: absolute;
+	margin-left: 19px;
+	margin-top: -34px;
+}
+.int-mujer {
+	position: absolute;
+	margin-left: 19px;
+	margin-top: 12px;
+}
+@media only screen and (max-width: 677px) {
+	.interruptor {
+		float: left;
+	}
+}
+.cuadritos {
+	padding-bottom: 1%;
+	padding-left: 0px;
+}
+.cuadritos h4{
+	margin-bottom: 0px;
+}
+.cuadritos .parrafo {
+	margin-top: 1%;
+	padding-left: 0px;
+}
+@media only screen and (max-width: 768px) {
+	.cuadritos .parrafo {
+	margin-top: 2%;
+}
+}
+.mujer {
+	width: 50px;
+	height: 25px;
+	background-color: #ff384d;
+	float: left;
+	margin-right: 7px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-family: Mohr SemiBold Latinotype;
+	padding-top: 5px;
+}
+.hombre {
+	width: 50px;
+	height: 25px;
+	background-color: #ff983c;
+	float: left;
+	margin-right: 7px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-family: Mohr SemiBold Latinotype;
+	padding-top: 5px;
+}
+.nulo {
+	width: 50px;
+	height: 25px;
+	border: 1px solid #ffffff;
+	float: left;
+	margin-right: 7px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-family: Mohr SemiBold Latinotype;
+	padding-top: 5px;
+}
+.icono {
+	padding-top: 2px;
+}
+.oscuro {
+	opacity: 0.2;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+
+
+<div id="bombilla" >
+<img src="eje2/b_off.jpg" />
+	
+</div>
+
+
+<div id="interruptor" onClick="pulsador()">
+	<img src="eje2/int_off.png" >
+</div>
+
+
+
+
+	<script type="text/javascript">
+
+	var x = true;
+
+	function pulsador() {
+		if(x){
+	
+		bombilla.innerHTML = '<img src="eje2/b_on.jpg"/>';
+		document.getElementById("interruptor").innerHTML = '<img src="eje2/int_on.png"/>';
+
+		x=false;
+
+	} else{
+
+		bombilla.innerHTML = '<img src="eje2/b_off.jpg"/>';
+		interruptor.innerHTML = '<img src="eje2/int_off.png"/>';
+		x=true;
+	}
+	}
+
+
+	</script>
+</body>
+</html>

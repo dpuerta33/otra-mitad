@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HM</title>
+<script src="http://www.d3plus.org/js/d3.js"></script>
+<script src="http://www.d3plus.org/js/d3plus.js"></script>
+ </head>
+<body>
+<div id="viz"></div>
+<script>
+
+  var sample_data = [
+  {"value": 40, "name": "Interior", "group": "Hombres"},
+    {"value": 48, "name": "Moda", "group": "Hombres"},
+    {"value": 70, "name": "Producto", "group": "Hombres"},
+    {"value": 75, "name": "Gráfico", "group": "Hombres"},
+	{"value": 151, "name": "Interior", "group": "Mujeres"},
+	{"value": 117, "name": "Moda", "group": "Mujeres"},
+	{"value": 71, "name": "Producto", "group": "Mujeres"},
+    {"value": 126, "name": "Gráfico", "group": "Mujeres"}
+  ]
+
+  var visualization = d3plus.viz()
+    .container("#viz")
+    .data(sample_data)
+    .type("pie")
+    .id(["name", "group"])
+    .size("value")
+    .draw()
+
+</script>
+
+</body>
+</html>

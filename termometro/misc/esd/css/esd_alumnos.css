@@ -1,0 +1,10 @@
+.cuerpo {
+	color: #271D2C;
+	padding-top: 1%;
+}
+#viz {
+	width: 50vw;
+	height: 50vw;
+	margin:0 auto;
+	color:#FFF;
+}
