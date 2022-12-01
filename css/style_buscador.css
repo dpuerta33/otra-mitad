@@ -1,0 +1,146 @@
+﻿.page-header {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.contenedorListas {
+  padding:2%;
+  padding-left: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.contenedorBanners {
+  padding-top: 0px;
+}
+.banner {
+  border: 1px solid #a79b94;
+  padding: 5px;
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin-right: 1%;
+  margin-top: 3%;
+}
+.banner:hover {
+	background-color: #538ABE;
+	opacity: 0.7;
+}
+.lastBanner {
+	margin-top: 2%;
+}
+.clasificador {
+  float: left;
+  height: 250px;
+  width: 15%;
+  padding: 2%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-right: 1%;
+  margin-top: 0px;
+}
+.clasificador h3{
+	font-size: 1.3em;
+	margin-top: 0px;
+}
+.clasificador ul{
+  /*padding-left: 10%;*/
+  /*list-style-image: url("img/circulo.png") !important;*/
+  list-style: none;
+}
+.clasificador ul li a{
+	text-decoration: none;
+	color: #000000;
+	opacity: 0.6;
+}
+.clasificador ul li a:link {
+	text-decoration: none;
+	color: #000000;
+}
+.clasificador ul li a:visited {
+	text-decoration: none;
+	color: #000000;
+	opacity: 1 !important;
+}
+.clasificador ul li a:active {
+	text-decoration: none;
+	color: #000000;
+}
+.clasificador ul li a:hover {
+	text-decoration: none;
+	color: #000000;
+	opacity: 1;
+}
+
+.clasificador h3 a{
+	text-decoration: none;
+	color: #000000;
+}
+.clasificador h3 a:link {
+	text-decoration: none;
+	color: #000000;
+}
+.clasificador h3 a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+.clasificador h3 a:active {
+	text-decoration: none;
+	color: #000000;
+}
+.clasificador h3 a:hover {
+	text-decoration: none;
+	color: #000000;
+	opacity: 0.6;
+}
+.circulo {
+	margin-right: 5px;
+	margin-bottom: 2px;
+	max-width: 11px;
+	display: inline;
+}
+
+@media only screen and (max-width: 1170px) {
+  .clasificador {
+	width: 20%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .clasificador {
+    margin-right: 3%;
+    width: 22%;
+  }
+  .banner {
+	width: 140px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .clasificador {
+    margin-right: 1%;
+    width: 45%;
+  }
+}
+.contenedorBanners a{
+	text-decoration: none;
+	color: #000000;
+	/*opacity: 0.6;*/
+}
+.contenedorBanners a:link {
+	text-decoration: none;
+	color: #000000;
+}
+.contenedorBanners a:visited {
+	text-decoration: none;
+	color: #000000;
+	opacity: 1 !important;
+}
+.contenedorBanners a:active {
+	text-decoration: none;
+	color: #000000;
+}
+.contenedorBanners a:hover {
+	text-decoration: none;
+	color: #000000;
+	opacity: 1;
+}

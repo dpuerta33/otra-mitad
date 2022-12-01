@@ -1,0 +1,62 @@
+/* Contenedor biografía */
+.cont-bio {
+  background-color: #787498;
+  padding: 1%;
+  margin-bottom: 5%;
+  height: 100%;
+}
+/* Contenedor en el que se deposita la imagen */
+.cont-target {
+  background-color: #ffffff;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 3%;
+  margin-left: 3%;;
+  /*color: #ffffff;*/
+  /*display: inline-block;*/
+  float: left;
+}
+.cont-target img{
+  max-width: 150px;
+  max-height: 150px;
+  margin: 0px;
+}
+.cont {
+  padding: 0px;
+  display: inline;
+}
+/* Contenedor imágenes */
+.cont-img {
+  padding: 1%;
+}
+.cont-img div img{
+  max-width: 150px;
+  max-height: 150px;
+ /* margin-right: 1%;
+  margin-bottom: 1%;*/
+}
+/*  Descripción */
+.descripcion {
+  color: #ffffff;
+}
+.contArrastrable {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	float: left;
+}
+.recargar {
+	background-color: #ffffff;
+	border: 0px;
+	padding: 1%;
+	padding-top: 2%;
+	margin-top: 2%;
+	margin-left: 1%;
+	color: #787498;
+}
+.recargar:hover {
+	background-color: #538ABE;
+	color: #ffffff;
+}
